@@ -1,20 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Ian Mwangi - Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.materialdesignicons.com/5.2.45/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
     </head>
     <body>
-
-
+        <section id="home" class="flex height-fix">
+          <div class="intro">
+            <p>Hello, I'm <span style="color: rgb(255, 252, 47);">Ian Mwangi</span>. <br> I'm a web developer.</p> 
+            <div class="btn page-link" style="cursor: pointer;" onclick="window.location='#about';">
+              View my work
+              <i class="mdi mdi-arrow-right"></i>
+            </div> 
+          </div>
+          <div class="navigation-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navlinks" aria-controls="navlinks" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navlinks">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacts">CONTACTS</a>
+                    </li>
+                  </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <section id="about">
+          <h2 data-aos="fade-right" data-aos-anchor-placement="top-bottom">ABOUT</h2>
+          <hr data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="450">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <div class="profile-pic">
+                  <img data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="550" src="./images/i9.jpg" alt="my image">
+                  <p data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="650" id="greetings">Hi.</p>
+                  <p data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="650">I am a web developer as well as having a degree in Electronics and Computer Engineering. 
+                    I have a strong passion for technology and logical thinking hence i gravitate towards the backend 
+                    development of web applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="750" class="row">
+              <div class="col-md-4">
+                <div class="feature">
+                  <div id="r-icon">
+                    <i class="mdi mdi-responsive"></i>
+                    <p id="description">Responsive</p>
+                    <p>My layouts will work on any device, big or small.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <div id="r-icon">
+                    <i class="mdi mdi-wrench"></i>
+                    <p id="description">Simplistic</p>
+                    <p>I find beauty in simplistic design and code hence i strive to incorporate this when making websites.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <div id="r-icon">
+                    <i class="mdi mdi-rocket"></i>
+                    <p id="description">Dynamic</p>
+                    <p>I like making my websites as dynamic as possible to make them come alive.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p id="tech-heading" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="850">Technologies I use.</p>
+              </div>
+            </div>
+            <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="950" class="row tech">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <img src="https://img.icons8.com/color/96/000000/python.png"/>
+                <p>Python</p>
+                <img src="https://img.icons8.com/color/96/000000/html-5.png"/>
+                <p>HTML 5</p>
+              </div>
+              <div class="col-md-2">
+                <img src="https://img.icons8.com/color/96/000000/css3.png"/>
+                <p>CSS 3</p>
+                <img src="https://img.icons8.com/color/96/000000/bootstrap.png"/>
+                <p>Bootstrap 4</p>
+              </div>
+              <div class="col-md-2">
+                <img src="https://img.icons8.com/color/96/000000/angularjs.png"/>
+                <p>AngularJs</p>
+                <img src="https://img.icons8.com/color/96/000000/django.png"/>
+                <p>Django</p>
+              </div>
+              <div class="col-md-2">
+                <img style="width: 96px; height: 96px;" src="./images/flask.png"/>
+                <p>Flask</p>
+                <img style="width: 96px; height: 96px;" src="./images/drf1.png"/>
+                <p>Django Rest Framework</p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio">
+          <h2 data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="1050">PROJECTS</h2>
+          <hr data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="1150">
+          <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="1250" class="project-selection">
+            <div class="btn active filter-button" data-filter="all"> ALL</div>
+            <div class="btn filter-button" data-filter="django"> DJANGO</div>
+            <div class="btn filter-button" data-filter="flask"> FLASK</div>
+            <div class="btn filter-button" data-filter="angular"> ANGULAR-JS</div>
+          </div>
+          <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="1250" class="projects flex row wrap">
+            <div class="filterDiv django">
+              <img src="./images/project-review.png"/>
+              <div class="desc">
+                <p id="title">Project Review</p>
+                <p style="color: indianred;">Django</p>
+                <div class="btn more" data-toggle="modal" data-target="#review">LEARN MORE</div>
+              </div>
+            </div>
+            <div class="filterDiv flask">
+              <img src="./images/my blog.png"/>
+              <div class="desc">
+                <p id="title">My Blog</p>
+                <p style="color: indianred;">Flask</p>
+                <div class="btn more" data-toggle="modal" data-target="#blogs">LEARN MORE</div>
+              </div>
+            </div>
+            <div class="filterDiv django">
+              <img src="./images/Photo gallery.jpg"/>
+              <div class="desc">
+                <p id="title">Photo Gallery</p>
+                <p style="color: indianred;">Django</p>
+                <div class="btn more" data-toggle="modal" data-target="#gallery">LEARN MORE</div>
+              </div>
+            </div>
+            <div class="filterDiv angular">
+              <img src="./images/gitsearch.png"/>
+              <div class="desc">
+                <p id="title">Github User Search</p>
+                <p style="color: indianred;">Angular</p>
+                <div class="btn more" data-toggle="modal" data-target="#gitsearch">LEARN MORE</div>
+              </div>
+            </div>
+            <div class="filterDiv angular">
+              <img src="./images/great quotes.png"/>
+              <div class="desc">
+                <p id="title">Greate Quotes App</p>
+                <p style="color: indianred;">Angular</p>
+                <div class="btn more" data-toggle="modal" data-target="#quotes">LEARN MORE</div>
+              </div>
+            </div>
+          </div>
+          <div id="review" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="./images/project-review.png"/>
+                  </div>
+                  <div class="modal-desc">
+                    <h5>Project Review</h5>
+                    <hr style="border-color: gray; border-width: 2px; margin: 0px;">
+                    <p>This app allows users to post their projects with their details that any 
+                      registered user can be able to see. The projects can be rated by any user 
+                      following 3 key criterias and the overall scores can be seen for each project. 
+                      The projects also comes with an api that allow user to get information on all 
+                      profiles and all projects.</p>
+                    <a href="https://imk-project-review.herokuapp.com/" target="_blank"><div class="btn website-link">VIEW SITE</div></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="blogs" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="./images/my blog.png"/>
+                  </div>
+                  <div class="modal-desc">
+                    <h5>My Blog</h5>
+                    <hr style="border-color: gray; border-width: 2px; margin: 0px;">
+                    <p>The application allows me to post blogs and users can be able to view 
+                      them and leave a comment. Users can also subscribe to receive email 
+                      notification every time a new blog is made. The application allows a 
+                      writer to post their blog by signing up.</p>
+                    <a href="https://imk-blog.herokuapp.com/" target="_blank"><div class="btn website-link">VIEW SITE</div></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="gallery" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="./images/Photo gallery.jpg"/>
+                  </div>
+                  <div class="modal-desc">
+                    <h5>Photo Gallery</h5>
+                    <hr style="border-color: gray; border-width: 2px; margin: 0px;">
+                    <p>The application allows users to view various photos that i have posted. 
+                      They can search photos based on the categories in the search bar and also 
+                      view details of an image such location, name and description.</p>
+                    <a href="https://imk-gallery.herokuapp.com/" target="_blank"><div class="btn website-link">VIEW SITE</div></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="gitsearch" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="./images/gitsearch.png"/>
+                  </div>
+                  <div class="modal-desc">
+                    <h5>Github User Search</h5>
+                    <hr style="border-color: gray; border-width: 2px; margin: 0px;">
+                    <p>The Github user search app allows people to search for github users using 
+                      their username. The app will output the user's profile pic, some details on 
+                      their profile and their public repositories.</p>
+                    <a href="https://ianmk-1.github.io/Gitsearch-app/" target="_blank"><div class="btn website-link">VIEW SITE</div></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="quotes" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="./images/great quotes.png"/>
+                  </div>
+                  <div class="modal-desc">
+                    <h5>Great Quotes App</h5>
+                    <hr style="border-color: gray; border-width: 2px; margin: 0px;">
+                    <p>The Great Quote App allows users to post quotes from authors or even themselves. 
+                      They can vote on it or even delete the quotes.</p>
+                    <a href="https://IanMK-1.github.io/Great-quotes-app/" target="_blank"><div class="btn website-link">VIEW SITE</div></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contacts">
+          <h2 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1300">CONTACTS</h2>
+          <hr data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1300">
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1300" class="tel">
+            <p><i class="mdi mdi-phone"></i> Phone Number:</p>
+          </div>
+          <span data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1300" id="number">(+254)772 400672</span>
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1300" class="social-links">
+            <a href="https://www.linkedin.com/in/ian-kimotho-4a40b3191" target="_blank"><i class="mdi mdi-linkedin"></i></a>
+            <a href="https://github.com/IanMK-1?tab=repositories" target="_blank"><i class="mdi mdi-github"></i></a>
+            <a href="mailto:iankimotho233@gmail.com" target="_blank"><i class="mdi mdi-gmail"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="mdi mdi-facebook"></i></a>
+          </div>
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1300" class="footnote">
+            <span style="font-size: 11pt;">IAN MWANGI</span>
+            <i class="mdi mdi-copyright"></i>2020
+          </div>
+        </section>
+        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

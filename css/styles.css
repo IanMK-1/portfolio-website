@@ -1,3 +1,594 @@
 * {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.intro {
+    background-image: url("../images/i9.jpg");
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    text-align: center;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+
+}
+@media screen and (min-width: 451px) {
+    div.intro {
+        font-size: xxx-large;
+        line-height: 40pt;
+    }
+  }
+  
+@media screen and (max-width: 450px) {
+    div.intro {
+        font-size: x-large;
+        line-height: 20pt;
+    }
+  }
+.btn {
+    border-radius: 0%;
+}
+@media screen and (min-width: 451px) {
+    div.page-link {
+        position: absolute;
+        margin-top: 30vh;
+        color: white;
+        background: transparent;
+        padding: 5px 15px 5px 15px;
+        font-size: 2vw;
+        border-width: 2px;
+    }
+    .btn .mdi::before {
+        position: relative;
+        left: 10px;
+        margin-right: 10px;
+    }
+    .btn:hover .mdi::before {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transition: all .3s ease;
+    }
+    div.page-link:hover {
+        position: absolute;
+        margin-top: 30vh;
+        color: white;
+        background: rgb(0, 204, 255);
+        padding: 5px 15px 5px 15px;
+        font-size: 2vw;
+        border-width: 2px;
+        border-color: rgb(0, 204, 255);
+    }
+  }
+  
+@media screen and (max-width: 450px) {
+    div.page-link {
+        position: absolute;
+        margin-top: 15vh;
+        color: white;
+        background: transparent;
+        padding: 5px 15px 5px 15px;
+        font-size: 4vw;
+        border-width: 2px;
+    }
+    .btn .mdi::before {
+        position: relative;
+        left: 10px;
+        margin-right: 10px;
+    }
+    .btn:hover .mdi::before {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transition: all .3s ease;
+    }
+    div.page-link:hover {
+        position: absolute;
+        margin-top: 15vh;
+        color: white;
+        background: rgb(0, 204, 255);
+        padding: 10px 15px 10px 15px;
+        font-size: 4vw;
+        border-width: 2px;
+        border-color: rgb(0, 204, 255);
+    }
+  }
+nav {
+    background-color: rgb(8, 86, 160);
+    position: relative;
+}
+.navigation-bar {
+    z-index:3;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+@media screen and (min-width: 451px){
+    #navlinks {
+        margin-left: 50px;
+    }
+    .nav-item {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 450px){
+    #navlinks {
+        margin-left: 0px;
+    }
+}
+#navlinks li a:hover {
+    color: rgb(255, 252, 47);
+}
+#about {
+    margin-top: 80px;
+}
+@media screen and (min-width: 451px){
+    #about h2 {
+        color: black;
+        font-weight: 600;
+        font-size: 30pt;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    #about hr {
+        border-color: black;
+        margin-left: 47%;
+        margin-right: 47%;
+        border-width: 5px;
+    }
+    .profile-pic img {
+        clip-path: polygon(50% 0, 100% 45%, 80% 100%, 20% 100%, 0 45%);
+        width: 50%;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #greetings {
+        color: brown;
+        font-size: 20pt;
+        font-weight: 600;
+        font-family: 'Fredoka One', cursive;
+    }
+    .profile-pic p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px){
+    #about h2 {
+        color: black;
+        font-weight: 600;
+        font-size: 25pt;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    #about hr {
+        border-color: black;
+        margin-left: 43%;
+        margin-right: 43%;
+        border-width: 5px;
+    }
+    .profile-pic img {
+        clip-path: polygon(50% 0, 100% 45%, 80% 100%, 20% 100%, 0 45%);
+        width: 60%;
+        height: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #greetings {
+        color: brown;
+        font-size: 15pt;
+        font-weight: 600;
+        font-family: 'Fredoka One', cursive;
+    }
+    .profile-pic p {
+        text-align: center;
+    }
+}
+.profile-pic {
+    margin-bottom: 50px;
+}
+.feature {
+    text-align: center;
+}
+@media screen and (min-width: 451px){
+    #r-icon {
+        margin-top: 30px;
+    }
+    #description {
+        font-size: 15pt;
+        color: black;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .mdi.mdi-responsive {
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-color: rgb(0, 204, 255);
+        padding: 10px;
+        font-size: 80px;
+        color: white;
+    }
+    .mdi.mdi-wrench {
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-color: rgb(0, 204, 255);
+        padding: 10px;
+        font-size: 80px;
+        color: white;
+    }
+    .mdi.mdi-rocket {
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-color: rgb(0, 204, 255);
+        padding: 10px;
+        font-size: 80px;
+        color: white;
+    }
+}
+@media screen and (max-width: 450px){
+    #r-icon {
+        margin-top: 30px;
+    }
+    #description {
+        font-size: 15pt;
+        color: black;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .mdi.mdi-responsive {
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-color: rgb(0, 204, 255);
+        padding: 10px;
+        font-size: 100px;
+        color: white;
+    }
+    .mdi.mdi-wrench {
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-color: rgb(0, 204, 255);
+        padding: 10px;
+        font-size: 100px;
+        color: white;
+    }
+    .mdi.mdi-rocket {
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background-color: rgb(0, 204, 255);
+        padding: 10px;
+        font-size: 100px;
+        color: white;
+    }
+}
+.tech {
+    text-align: center;
+}
+#tech-heading {
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 700;
+    margin-top: 50px;
+}
+#portfolio {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(238, 235, 235);
+}
+@media screen and (min-width: 451px){
+    #portfolio h2 {
+        color: black;
+        font-weight: 600;
+        font-size: 30pt;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    #portfolio hr {
+        border-color: black;
+        margin-left: 47%;
+        margin-right: 47%;
+        border-width: 5px;
+    }
+}
+@media screen and (max-width: 450px){
+    #portfolio h2 {
+        color: black;
+        font-weight: 600;
+        font-size: 25pt;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    #portfolio hr {
+        border-color: black;
+        margin-left: 43%;
+        margin-right: 43%;
+        border-width: 5px;
+    }
+}
+.project-selection {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active {
+    background-color: indianred;
+    color: white;
+    border-color: indianred;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+}
+.active:hover {
+    color: white;
+}
+@media screen and (min-width: 451px){
+    .filter-button {
+        margin: 10px;
+        cursor: pointer;
+    }
+    .projects {
+        padding: 0px;
+        margin: 20px;
+    }
+    .projects.flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects.flex.wrap {
+        flex-wrap: wrap;
+    }
+    .projects.flex.row {
+        flex-direction: row;
+    }
+    .filterDiv {
+        position: relative;
+    }
+    .filterDiv img {
+        width: 250pt;
+        height: 300px;
+        display: inline;
+    }
+    .desc {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+    }
+    .desc p {
+        line-height: 5px;
+    }
+    #title {
+        font-size: 15pt;
+        font-weight: 600;
+    }
+    .filterDiv:hover .desc{
+        visibility: visible;
+        opacity: 1;
+        transition: 1s ease-in-out;
+    }
+    .filterDiv:hover img {
+        opacity: 0;
+        transition: 1s ease-in-out;
+    }
+    .btn.more {
+        border-color: indianred;
+        border-width: 2px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .btn.more:hover {
+        background-color: indianred;
+    }
+}
+@media screen and (max-width: 450px){
+    .filter-button {
+        margin: 2px;
+        cursor: pointer;
+    }
+    .projects {
+        padding: 0px;
+    }
+    .projects.flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects.flex.wrap {
+        flex-wrap: wrap;
+    }
+    .projects.flex.row {
+        flex-direction: row;
+    }
+    .filterDiv img {
+        width: 150pt;
+        height: 200px;
+        display: inline;
+    }
+    .desc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+    }
+    .desc p {
+        line-height: 5px;
+    }
+    #title {
+        font-size: 15pt;
+        font-weight: 600;
+    }
+    .filterDiv:hover .desc{
+        visibility: visible;
+        opacity: 1;
+        transition: 1s ease-in-out;
+    }
+    .filterDiv:hover img {
+        opacity: 0;
+        transition: 1s ease-in-out;
+    }
+    .btn.more {
+        border-color: indianred;
+        border-width: 2px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .btn.more:hover {
+        background-color: indianred;
+    }
+}
+.modal-body {
+    margin: 0px;
+    padding: 0px;
+}
+.modal-image img {
+    width: 100%;
+    height: 80%;
+    padding-bottom: 5px;
+    background-color: rgb(78, 75, 75);
+}
+.modal-desc {
+    margin: 10px;
+}
+.modal-desc h5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15pt;
+    font-weight: 600;
+}
+.modal-desc p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.website-link {
+    background-color: indianred;
+    color: white;
+}
+.website-link:hover {
+    background-color: white;
+    color: indianred;
+}
+.close {
+    font-size: 30pt;
+}
+#contacts {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(21, 49, 75);
+}
+@media screen and (min-width: 451px){
+    #contacts h2 {
+        color: black;
+        font-weight: 600;
+        font-size: 30pt;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    #contacts hr {
+        border-color: black;
+        margin-left: 47%;
+        margin-right: 47%;
+        border-width: 5px;
+    }
+}
+@media screen and (max-width: 450px){
+    #contacts h2 {
+        color: black;
+        font-weight: 600;
+        font-size: 25pt;
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+    }
+    #contacts hr {
+        border-color: black;
+        margin-left: 43%;
+        margin-right: 43%;
+        border-width: 5px;
+    }
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links a {
+    margin: 15px 10px 15px 10px;
+}
+.footnote {
+    text-align: center;
+    color: rgb(206, 169, 169);
+    margin-top: 20px;
+}
+.mdi.mdi-gmail {
+    font-size: 30pt;
+    color: white;
+    padding: 5px 6px 5px 6px;
+    background-color: teal;
+}
+.mdi.mdi-gmail:hover {
+    background-color: rgb(0, 255, 234);
+}
+.mdi.mdi-linkedin {
+    font-size: 30pt;
+    color: white;
+    padding: 5px 6px 5px 6px;
+    background-color: teal;
+}
+.mdi.mdi-linkedin:hover {
+    background-color: rgb(0, 255, 234);
+}
+.mdi.mdi-github {
+    font-size: 30pt;
+    color: white;
+    padding: 5px 6px 5px 6px;
+    background-color: teal;
+}
+.mdi.mdi-github:hover {
+    background-color: rgb(0, 255, 234);
+}
+.mdi.mdi-facebook {
+    font-size: 30pt;
+    color: white;
+    padding: 5px 6px 5px 6px;
+    background-color: teal;
+}
+.mdi.mdi-facebook:hover {
+    background-color: rgb(0, 255, 234);
+}
+.tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(206, 169, 169);
+    line-height: 5px;
+    margin-top: 25px;
+}
+#number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(206, 169, 169);
+    line-height: 5px;
+    margin-bottom: 15px;
+}
+.mdi.mdi-phone {
+    font-size: 20pt;
 }
