@@ -420,14 +420,14 @@ nav {
         display: inline;
     }
     .desc {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
         width: 100%;
         text-align: center;
         visibility: hidden;
         opacity: 0;
         transition: opacity .2s, visibility .2s;
+        margin-top: -100pt;
+        margin-bottom: 20pt;
     }
     .desc p {
         line-height: 5px;
@@ -492,7 +492,7 @@ nav {
 #contacts {
     padding-top: 100px;
     padding-bottom: 50px;
-    background-color: rgb(21, 49, 75);
+    background: linear-gradient(90deg, rgba(18,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 @media screen and (min-width: 451px){
     #contacts h2 {
