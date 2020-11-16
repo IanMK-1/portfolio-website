@@ -269,7 +269,14 @@ nav {
     }
 }
 .tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+.tech-listing {
+    flex-direction: column;
+    margin-right: 10px;
 }
 #tech-heading {
     text-align: center;
